@@ -5,6 +5,9 @@ public class Step {
     private int countSteps;
 
 
+    public Step() {
+    }
+
     public Step(Axis axis, int length) {
         this.axis = axis;
         this.length = length;

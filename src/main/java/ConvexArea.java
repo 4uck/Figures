@@ -33,12 +33,12 @@ public class ConvexArea {
         this.tg = b/a;
     }
 
-    public boolean isAccessMove(Coordinate point, int move){
+    public boolean isAccessPoint(Coordinate point){
 
         int a_mod = vertex0.getY() - point.getY();
         int b_mod = tg * a_mod;
 
-        if (vertex0.getX() + b_mod <= point.getX() + move)
+        if (vertex0.getX() + b_mod <= point.getX())
             return false;
 
         return true;
