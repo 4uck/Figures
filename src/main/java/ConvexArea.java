@@ -5,7 +5,7 @@ public class ConvexArea {
     private Coordinate vertex1;
     private Coordinate vertex3;
 
-    private int tg;
+    private double tg;
 
     public ConvexArea(Coordinate vertex0, Coordinate vertex1) {
         this.vertex0 = vertex0;
@@ -30,15 +30,17 @@ public class ConvexArea {
         int a = vertex0.getY() - vertex3.getY();
         int b = vertex1.getX() - vertex3.getX();
 
-        this.tg = b/a;
+        this.tg = (double) b/a;
     }
 
     public boolean isAccessPoint(Coordinate point){
 
         int a_mod = vertex0.getY() - point.getY();
-        int b_mod = tg * a_mod;
+        double b_mod = tg * a_mod;
 
-        if (vertex0.getX() + b_mod <= point.getX())
+        if (vertex3.getX() + b_mod < point.getX() ||
+                vertex3.getX() > point.getX() ||
+                vertex3.getY() > point.getY())
             return false;
 
         return true;
