@@ -5,5 +5,9 @@
 чтобы получился прямоугольний треугольник.
 
 ### Алгоритм 1
-1 алгоритм считается в класе Solution. Тесты в классе SolutionTest
+1 алгоритм считается в класе SolutionAlgorithm1. Тесты в классе SolutionAlgorithm1Test
+
+### Алгоритм 2
+2 алгоритм считается в класе SolutionAlgorithm2. Тесты в классе SolutionAlgorithm2Test
+
 

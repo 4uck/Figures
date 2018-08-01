@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Solution {
+public class SolutionAlgorithm1 {
 
     private int dymax = 3;
     private int dxmax = 3;
